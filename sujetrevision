@@ -1,0 +1,33 @@
+Exercice 1 ★ : fiche de commande (chapitres 1 à 3)
+Écris un programme qui lit le nom complet d’un client (avec nextLine()), une quantité (int) et un prix unitaire HT (long). Il affiche :
+
+le nom en majuscules et sa longueur ;
+les initiales (par exemple « Awa Diop » donne AD) ;
+le montant HT, la TVA à 18 % arrondie au franc le plus proche, et le TTC, alignés avec printf.
+
+Test : « Awa Diop », 3 articles à 2 750 FCFA. Attention au piège nextInt() suivi de nextLine().
+
+Exercice 2 ★★ : validation d’e-mail (chapitres 3 et 4)
+Demande une adresse e-mail et redemande-la tant qu'elle n'est pas valide. Elle est valide si elle contient un @, un . situé après le @, et aucun espace. Quand elle est valide, affiche la partie avant le @ et le domaine.
+
+Tests : aminata@isep.sn (valide), aminata@isep (invalide), amina ta@isep.sn (invalide).
+
+Exercice 3 ★★ : caisse de la boutique (chapitre 4)
+Fais un menu en boucle : 1 ajouter un article (on saisit son prix), 2 afficher le total, 3 afficher le total après remise, 0 quitter. La remise est de 10 % si le total dépasse 50 000 FCFA, sinon il n’y en a pas. Utilise un do ... while et un switch moderne (avec ->).
+
+Test : ajoute 30 000 puis 25 000. Le total est 55 000, et le total remisé est 49 500.
+
+Exercice 4 ★★ : ventes de la semaine (chapitre 5)
+Crée un tableau int[7] avec les ventes quotidiennes, puis écris ces méthodes static : somme, moyenne (qui renvoie un double), maximum, indiceDuMax et joursAuDessusDeLaMoyenne (qui renvoie le nombre de jours). Dans main, affiche le meilleur jour avec son nom (lundi, mardi...), en utilisant un switch expression.
+
+Test : {120, 80, 200, 150, 90, 300, 60}. La somme est 1 000, la moyenne 142,857..., le maximum 300 (indice 5, donc samedi), avec 3 jours au-dessus de la moyenne.
+
+Exercice 5 ★★★ : boîte à outils (chapitres 4 et 5)
+Écris ces quatre méthodes static, puis teste-les dans main :
+
+triangleInverse(int n) : affiche n lignes d’étoiles, de n étoiles jusqu’à 1 (deux boucles imbriquées) ;
+puissance(int base, int exp) : version récursive, sans Math.pow ;
+estPalindrome(String s) : renvoie true pour « kayak » ou « radar » ;
+moyenne(int[] t) et moyenne(double[] t) : deux surcharges.
+
+Tests : puissance(2, 10) donne 1024, et estPalindrome("Radar") doit gérer la casse (pense à une méthode de String pour ça).
