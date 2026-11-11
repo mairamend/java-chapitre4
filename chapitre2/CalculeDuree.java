@@ -13,6 +13,7 @@ public class CalculeDuree {
         int minutes = (duree % 3600)/ 60;
         int secondes = duree % 60; 
         System.out.printf("%d h %d min %d s %n",heure,minutes,secondes);
+        System.out.println("Ceci est ma premiere instruction sur ma nouvelle machine");
         sc.close();
     }
 }
