@@ -37,7 +37,7 @@ public class CompteMobile {
             System.out.println("Vous ne pouvez pas transférer de l'argent à votre propre compte.");
             return;
         }
-        if (montant > 0 ) {
+        if (montant  >0 ) {
             long frais;
             if (montant < SEUIL_FRAIS) {
                 frais = FRAIS_FIXE;

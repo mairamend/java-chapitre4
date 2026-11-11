@@ -8,7 +8,7 @@ public class Tutu extends Titi {
     }
     int ajoute(int a){
         return x + 3 * a;
-    }
+    }   
     public void moi(){
         super.moi();
         System.out.println(" z = "+z);

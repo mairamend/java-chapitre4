@@ -4,7 +4,7 @@ public class Etudiant {
     private String prenom;
     private double[] notes = new double[5];
     private  static int nbEtudiants = 0;
-    private int nbNotes = 0;
+
     public Etudiant(String nom , String prenom ){
         Etudiant.nbEtudiants++;
         this.nom = nom;
@@ -22,11 +22,11 @@ public class Etudiant {
             return;
         }
         this.notes[indice] = note;
-        this.nbNotes++;
+   
     }
     public double moyenne(){
         double somme = 0;
-       
+        int nbNotes = 0;
         for (double note : this.notes) {
             if (note > 0) {
                 somme += note;
